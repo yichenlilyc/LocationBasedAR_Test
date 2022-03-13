@@ -16,26 +16,27 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: true; videoTexture: true;"
     >
-    <!-- <a-box 
+    <a-box 
         id="box"
         material="color: yellow" 
-        depth="4" height="4" width="4"
-        gps-entity-place="42.2614519; longitude: -71.7971315;" 
-    ></a-box> -->
+        depth="10" height="10" width="10"
+        gps-entity-place="latitude:42.261476; longitude:-71.797559;" 
+    ></a-box>
     <a-entity 
         gltf-model="./assets/magnemite/scene.gltf" 
         rotation="0 180 0" 
         scale="1 1 1" 
-        gps-entity-place="latitude:42.2738269; longitude:-71.8096979;" 
+        gps-entity-place="latitude:42.261476; longitude:-71.797559;" 
         animation-mixer
     ></a-entity>
       <!-- <a-text
         value="This content will always face you."
         look-at="[gps-camera]"
         scale="120 120 120"
+        school_location="latitude:42.2738269; longitude:-71.8096979;" 
       ></a-text> -->
       
-      <a-camera gps-camera="simulateLatitude: 42.2737577; simulateLongitude: -71.8096143;" rotation-reader> </a-camera>
+      <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
     <script>                  
 
